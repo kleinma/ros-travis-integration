@@ -1,6 +1,6 @@
 # ROS package continuous integration with travis.
 
-This repository contains a [.travis.yml](https://github.com/felixduvallet/ros-travis-integration/blob/master/.travis.yml)
+This repository contains a [.travis.yml](https://github.com/kleinma/ros-travis-integration/blob/master/.travis.yml)
 file for setting up continuous integration (through Travis-CI) for any ROS package.
 
 Improvements & issues are welcome via pull requests and the issue tracker.
@@ -15,10 +15,10 @@ how to correctly handle dependencies (system and source).
 
 To enable Travis continuous integration for your ROS package, first copy these
 files to the *root* of your repository:
- - [.travis.yml](https://github.com/felixduvallet/ros-travis-integration/blob/master/.travis.yml): The script that tells Travis CI what to build.
- - [dependencies.rosinstall](https://github.com/felixduvallet/ros-travis-integration/blob/master/dependencies.rosinstall): A wstool-generated list of source dependencies
+ - [.travis.yml](https://github.com/kleinma/ros-travis-integration/blob/master/.travis.yml): The script that tells Travis CI what to build.
+ - [dependencies.rosinstall](https://github.com/kleinma/ros-travis-integration/blob/master/dependencies.rosinstall): A wstool-generated list of source dependencies
    (optional). **Update the contents with your packages.**
- - [catkin.options](https://github.com/felixduvallet/ros-travis-integration/blob/master/catkin.options): Contents of this file are passed as arguments to catkin_make,
+ - [catkin.options](https://github.com/kleinma/ros-travis-integration/blob/master/catkin.options): Contents of this file are passed as arguments to catkin_make,
    for example package blacklists (optional).
 
 Then, log on to travis-ci and turn on continuous integration for the repository:
